@@ -1,0 +1,67 @@
+/******************************************************/
+/*           Hoja de estilo de Gazpacho.html          */
+/*           Autor: Francisco Romero Zarco            */
+/*                   23/10/2023                       */
+/*                Lengaje de marcas                   */
+/******************************************************/
+
+
+
+
+
+/*poner SIEMPRE que utilicemos un layout complejo*/
+/* las medidas del ancho y el alto se deben calcular del borde hacia adentro*/
+
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap);
+
+body{background-image: url(../Imagenes/background.jpg);
+    margin:auto;
+    padding:0 ;
+
+}
+
+h1{font-family: 'Poppins';}
+
+#wrapper {width:80%;                        /*para width, la medida suele ser el porcentaje*/
+        margin:auto;
+        padding:5%;
+        background-color:beige;
+        }
+    ul{font-family: 'Comfortaa';}
+    #ul2{font-family: 'Comfortaa';}
+    #ol1{font-family: 'Comfortaa';}
+        h1{text-align: center;}
+    header {background-color: black;
+    color:white;
+    padding: 20px;
+    }
+        h2{text-align: center;
+            font-family: 'Poppins';}
+    
+    
+    
+    blockquote{font-style: italic;
+    border: 2px;
+    box-shadow: 10px 10px 30px;
+    border-left: 3px solid #F3600C;
+    background-color:white;
+    text-align: center;
+    border-radius: 10px
+    ;}
+
+    h1,h2{padding: 15px;}
+
+    img{width: 75%;
+        display:block;
+        margin: auto;}
+
+/***************RESPONSIVIDAD*************************/
+/*               VAMOS A HACER QUE EL WRAPPER PASE AL 100% EN MOVILES***/
+        /* ATENCION : MEDIA QUERY */
+    
+    @media only screen and (width<500px){
+        #wrapper{width: 95%}            /*** redefino el ancho del wrapper para moviles*****/
+        img{width: 100%}
+    };
